@@ -19,7 +19,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="container">
       <h1>Realiza tus preguntas al docente y quedarán almacenadas en una base de datos</h1>
       <label htmlFor='question'>Pregunta:</label>
       <textarea
@@ -27,12 +27,11 @@ function App() {
         onChange={(e) => setQuestion(e.target.value)}
         rows={5}
         cols={50}
-        style={{ fontSize: '1.5rem' }}
       />
       <button onClick={sendQuestion}>Enviar pregunta</button>
       <h2>Respuesta del docente:</h2>
       <p>{response}</p>
-    </>
+    </div>
   )
 }
 
