@@ -20,17 +20,17 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Realiza tus preguntas al docente y quedarán almacenadas en una base de datos</h1>
+      <p className='parrafo'>Realiza tus preguntas al docente y quedarán almacenadas en una base de datos</p>
       <label htmlFor='question'>Pregunta:</label>
       <textarea
         value={question}
         onChange={(e) => setQuestion(e.target.value)}
-        rows={5}
-        cols={50}
+        rows={3}
+        cols={40}
       />
       <button onClick={sendQuestion}>Enviar pregunta</button>
-      <h2>Respuesta del docente:</h2>
-      <p>{response}</p>
+      <p className='parrafo'>Respuesta del docente:</p>
+      <p className='respuesta'>{response}</p>
     </div>
   )
 }

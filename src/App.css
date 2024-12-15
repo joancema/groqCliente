@@ -61,10 +61,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.parrafo {
   color: #333;
   text-align: center;
   margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 label {
@@ -109,6 +111,13 @@ p {
   text-align: center;
   font-size: 1.2rem;
   color: #666;
+}
+.parrafo {
+  color: #333;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 @media (min-width: 600px) {
